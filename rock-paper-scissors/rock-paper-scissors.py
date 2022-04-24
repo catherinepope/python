@@ -1,10 +1,14 @@
 from random import randint
+from rock_paper_scissors_images import images
 
 player_wins = 0
 computer_wins = 0
 
+for img in images:
+  print(img)
+
 while player_wins < 2 and computer_wins < 2:
-  print(f"Player Score: {player_wins} Computer Score: {computer_wins}")
+  print(f"Human Score: {player_wins} Computer Score: {computer_wins}")
   print("Rock...")
   print("Paper...")
   print("Scissors...")
@@ -58,4 +62,4 @@ elif player_wins == computer_wins:
   print("It's a tie!")
 else:
   print("Damn, the computer won.")
-  
+ 
